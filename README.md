@@ -2,7 +2,7 @@
 
 **🚀 Automatically upgrade containers using 1Panel's API**  
 
-This GitHub Action allows you to **seamlessly upgrade Docker containers** managed by https://1panel.io/ via its API. It supports **custom API versions** (e.g., `v1`, `v2`) and **flexible image tagging** (versions, `latest`, or SHA256 digests).  
+This GitHub Action allows you to **seamlessly upgrade Docker containers** managed by https://1panel.pro/ via its API. It supports **custom API versions** (e.g., `v1`, `v2`) and **flexible image tagging** (versions, `latest`, or SHA256 digests).  
 
 ### **🔹 Key Features**  
 ✅ **Supports 1Panel API versions** – Works with `v1`, `v2`, or any custom API path.  
@@ -13,7 +13,7 @@ This GitHub Action allows you to **seamlessly upgrade Docker containers** manage
 
 ### **📥 Usage Example**  
 ```yaml
-- uses: persiliao/1panel-upgrade-action@v1
+- uses: persiliao/1panel-upgrade-container-action@v1
   with:
     panel-api-key: ${{ secrets.PANEL_API_KEY }}
     panel-host: "https://1panel.example.com"
@@ -50,7 +50,7 @@ This GitHub Action allows you to **seamlessly upgrade Docker containers** manage
 Add this action to your workflow for effortless 1Panel container upgrades.  
 
 ```yaml
-- uses: persiliao/1panel-upgrade-action@v1
+- uses: persiliao/1panel-upgrade-container-action@v1
 ```  
 
-**🔗 Learn more about 1Panel:** https://1panel.io/docs
+**🔗 Learn more about 1Panel:** https://1panel.pro/docs
