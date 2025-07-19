@@ -1,0 +1,15 @@
+{
+    "name": "1panel-upgrade-container-action",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "ncc build src/main.js -o dist"
+    },
+    "dependencies": {
+      "@actions/core": "^1.11.1",
+      "undici": "^7.12.0"
+    },
+    "devDependencies": {
+      "@vercel/ncc": "^0.38.3"
+    }
+  }

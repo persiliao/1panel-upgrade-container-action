@@ -1,0 +1,25 @@
+name: 'Upgrade 1Panel Container'
+description: 'Upgrade Docker containers via 1Panel API (supports versioned APIs and images)'
+branding:
+  icon: 'refresh-cw'
+  color: 'blue'
+
+inputs:
+  panel-api-key:
+    description: '1Panel API Key (store in GitHub Secrets)'
+    required: true
+  panel-host:
+    description: '1Panel server URL (e.g., https://1panel.example.com)'
+    required: true
+  api-version:
+    description: '1Panel API version path (e.g., v1, v2)'
+    default: 'v2'
+  container-name:
+    description: 'Name of the container to upgrade'
+    required: true
+  image-repo:
+    description: 'Image repository (e.g., registry.example.com/app)'
+    required: true
+  image-version:
+    description: 'Image version (tag like v1.2.0 or SHA256 digest)'
+    default: 'latest'
