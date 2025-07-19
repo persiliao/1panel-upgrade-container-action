@@ -23,3 +23,8 @@ inputs:
   image-version:
     description: 'Image version (tag like v1.2.0 or SHA256 digest)'
     default: 'latest'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+  post: 'dist/index.js'
